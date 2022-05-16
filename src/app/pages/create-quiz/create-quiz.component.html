@@ -1,0 +1,84 @@
+<div class="body bg-light">
+    <app-header></app-header>
+    <app-page-heading [title]="'Create a new quiz'"></app-page-heading>
+
+    <div class="border container mt-5">
+        <form class="addQuiz row g-3">
+            <div class="col-12">
+                <label for="inputTitle" class="form-label"
+                    >Title</label
+                >
+                <input
+                    required
+                    type="text"
+                    class="form-control"
+                    id="inputTitle"
+                    placeholder="Enter your quiz title"
+                />
+            </div>
+            <div class="col-md-6">
+                <label for="inputDuration" class="form-label"
+                    >Duration (in mins)</label
+                >
+                <input
+                    required
+                    type="number"
+                    min="1"
+                    class="form-control"
+                    id="inputDuration"
+                />
+            </div>
+            <div class="col-md-6">
+                <label for="inputScore" class="form-label"
+                    >Total available score</label
+                >
+                <input
+                    required
+                    min="1"
+                    max="100"
+                    type="number"
+                    class="form-control"
+                    id="inputScore"
+                />
+            </div>
+            <!-- horizontal line -->
+            <div class="bg-info mb-2" style="height: 1px"></div>
+
+            <app-question></app-question>
+
+            <div class="col-12">
+                <button
+                    id="addQuizBtn"
+                    type="submit"
+                    class="btn addBtn d-block mx-auto mb-5"
+                >
+                    Add
+                </button>
+            </div>
+        </form>
+
+        <!-- container for holding the quizzes as they are being created -->
+        <form class="row g-3">
+            <div class="bg-secondary text-white mt-5 text-center">
+                <h5 class="py-1">
+                    question Paper title
+                </h5>
+            </div>
+
+            <div>
+                <!--Questions Come Here-->
+                <app-question [disableEdit]="true"></app-question>
+            </div>
+
+            <div class="col-12 pb-3">
+                <button
+                    type="submit"
+                    class="btn doneBtn d-block mx-auto mt-4"
+                >
+                    Done
+                </button>
+            </div>
+        </form>
+    </div>
+    <app-footer></app-footer>
+</div>

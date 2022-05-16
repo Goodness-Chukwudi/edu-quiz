@@ -1,0 +1,153 @@
+<div>
+  <div class="position-relative mb-1">
+    <label class="form-label">Question</label>
+    <button
+      *ngIf="disableEdit && !editing"
+      type="button"
+      class="btn btn-outline-info btn-sm position-absolute top-50 end-0 translate-middle-y"
+      (click)="editing = !editing"
+    >
+      edit
+    </button>
+    <button
+      *ngIf="disableEdit && editing"
+      type="button"
+      class="btn btn-outline-success btn-sm position-absolute top-50 end-0 translate-middle-y"
+      (click)="editing = !editing"
+    >
+      done
+    </button>
+  </div>
+
+  <input
+    required
+    type="text"
+    class="form-control"
+    placeholder="Enter your question here"
+    [disabled]="disableEdit && !editing"
+  />
+</div>
+<!-- options here -->
+<div class="row mb-3">
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <div class="input-group">
+      <div class="input-group-text">
+        <input
+          required
+          class="form-check-input mt-0"
+          type="radio"
+          name="options"
+          aria-label="Radio button for following text input"
+          [disabled]="disableEdit && !editing"
+        />
+      </div>
+      <input
+        required
+        type="text"
+        class="form-control"
+        aria-label="Text input with radio button"
+        [disabled]="disableEdit && !editing"
+      />
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <div class="input-group">
+      <div class="input-group-text">
+        <input
+          required
+          class="form-check-input mt-0"
+          type="radio"
+          name="options"
+          aria-label="Radio button for following text input"
+          [disabled]="disableEdit && !editing"
+        />
+      </div>
+      <input
+        required
+        type="text"
+        class="form-control"
+        aria-label="Text input with radio button"
+        [disabled]="disableEdit && !editing"
+      />
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <div class="input-group">
+      <div class="input-group-text">
+        <input
+          required
+          class="form-check-input mt-0"
+          type="radio"
+          name="options"
+          aria-label="Radio button for following text input"
+          [disabled]="disableEdit && !editing"
+        />
+      </div>
+      <input
+        required
+        type="text"
+        class="form-control"
+        aria-label="Text input with radio button"
+        [disabled]="disableEdit && !editing"
+      />
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <div class="input-group">
+      <div class="input-group-text">
+        <input
+          required
+          class="form-check-input mt-0"
+          type="radio"
+          name="options"
+          aria-label="Radio button for following text input"
+          [disabled]="disableEdit && !editing"
+        />
+      </div>
+      <input
+        required
+        type="text"
+        class="form-control"
+        aria-label="Text input with radio button"
+        [disabled]="disableEdit && !editing"
+      />
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <div class="input-group">
+      <div class="input-group-text">
+        <input
+          required
+          class="form-check-input mt-0"
+          type="radio"
+          name="options"
+          aria-label="Radio button for following text input"
+          [disabled]="disableEdit && !editing"
+        />
+      </div>
+      <input
+        required
+        type="text"
+        class="form-control"
+        aria-label="Text input with radio button"
+        [disabled]="disableEdit && !editing"
+      />
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+    <input
+      required
+      min="1"
+      max="100"
+      type="number"
+      class="form-control"
+      placeholder="question score"
+      [disabled]="disableEdit && !editing"
+    />
+  </div>
+</div>

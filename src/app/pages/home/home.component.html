@@ -1,4 +1,49 @@
-<div class="home">
-    <app-header></app-header>
-    <app-footer></app-footer>
+<!--wrap every page with this div -->
+<div class="body">
+  <app-header></app-header>
+
+  <main class="position-relative">
+    <div class="banner"></div>
+    <div class="container-fluid position-absolute top-0 start-0 home-cols">
+      <div class="row align-items-center text-center">
+        <div class="col-lg-6">
+          <p class="h1 service pt-2">
+            We provide the best online examinations services!
+          </p>
+          <button (click)="clicked = !clicked" class="h5 rounded-pill take-quiz mt-4">Take a quiz</button>
+          <!-- Quiz ID Popup -->
+          <app-get-quiz *ngIf="clicked" ></app-get-quiz>
+          <!-- Quiz ID Popup ends -->
+        </div>
+        <div class="col-lg-6 mt-1">
+          <div class="rounded-circle mx-auto round-img mt-5">
+            <img
+              class="img-fluid mt-5 pt-5"
+              src="./assets/images/online-test.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="write-up container text-center mt-5 pt-5">
+      <h1>
+        The best
+        <span>online examinations </span>service provider in Nigeria
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur
+        repellat error officiis quia quaerat modi necessitatibus qui quis ipsam
+        doloremque vero, sunt et libero nostrum, corrupti pariatur! Quos, autem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur
+        repellat error officiis quia quaerat modi necessitatibus qui quis ipsam
+        doloremque vero, sunt et libero nostrum, corrupti pariatur! Quos, autem?
+      </p>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
 </div>
