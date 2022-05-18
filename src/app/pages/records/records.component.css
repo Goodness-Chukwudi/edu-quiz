@@ -1,0 +1,4 @@
+.createdQuiz:hover,
+.createdResult:hover {
+	background-color: rgb(207, 226, 255);
+}

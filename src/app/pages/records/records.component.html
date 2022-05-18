@@ -1,0 +1,61 @@
+<div class="body bg-light">
+  <app-header></app-header>
+  <app-page-heading [title]="'Result and Quiz Records'"></app-page-heading>
+
+  <main class="position-relative container my-5">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h4 class="text-center">Your Quizzes</h4>
+        <div>
+          <div
+            class="alert alert-primary text-center mt-3 quiz-alert"
+            role="alert"
+          >
+            No quiz was found! <br />
+            Login or create a quiz to see your quiz list
+          </div>
+          <ol class="list-group list-group-numbered" id="quizList">
+            <!-- List of quizzes is appended here -->
+            <li
+              class="createdQuiz list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto">
+                <div class="text-info fw-bold">Quiz ID: quiz.id</div>
+                quiz.title
+              </div>
+              <span class="badge bg-secondary">17th May 2022</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <h4 class="text-center">Your Results</h4>
+        <div>
+          <div
+            class="alert alert-primary text-center mt-3 result-alert"
+            role="alert"
+          >
+            No result was found! <br />
+            Login or take a quiz to see your result list
+          </div>
+          <ol class="resultList list-group list-group-numbered" id="resultList">
+            <li
+              class="createdResult list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto">
+                <div class="text-info fw-bold">Result ID: result.id</div>
+                result.title
+              </div>
+              <span class="badge bg-secondary"
+                >17th May 2022</span
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+</div>
