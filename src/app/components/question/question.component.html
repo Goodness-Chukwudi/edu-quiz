@@ -1,7 +1,8 @@
 <div>
   <div class="position-relative mb-1">
     <label class="form-label">Question</label>
-    <button
+    <div *ngIf="!inResult">
+      <button
       *ngIf="disableEdit && !editing"
       type="button"
       class="btn btn-outline-info btn-sm position-absolute top-50 end-0 translate-middle-y"
@@ -17,6 +18,7 @@
     >
       done
     </button>
+    </div>
   </div>
 
   <input

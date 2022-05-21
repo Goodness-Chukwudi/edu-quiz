@@ -12,6 +12,8 @@ import { TakeQuizComponent } from './pages/take-quiz/take-quiz.component';
 import { PageHeadingComponent } from './components/page-heading/page-heading.component';
 import { QuestionComponent } from './components/question/question.component';
 import { RecordsComponent } from './pages/records/records.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
+import { ResultComponent } from './pages/result/result.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RecordsComponent } from './pages/records/records.component';
     TakeQuizComponent,
     PageHeadingComponent,
     QuestionComponent,
-    RecordsComponent
+    RecordsComponent,
+    QuizComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

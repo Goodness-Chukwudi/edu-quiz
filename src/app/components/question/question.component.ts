@@ -10,6 +10,7 @@ export class QuestionComponent implements OnInit {
   editing:boolean = false;
 
   @Input() disableEdit:boolean = false;
+  @Input() inResult:boolean = false;
 
   constructor() { }
 

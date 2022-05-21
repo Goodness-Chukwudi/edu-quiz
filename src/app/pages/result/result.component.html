@@ -1,0 +1,30 @@
+<main class="body bg-light">
+    <app-header></app-header>
+    <app-page-heading [title]="'Create a new quiz'"></app-page-heading>
+
+    <div class="border container mt-3">
+        <div class="mt-4">
+            <div class="alert alert-primary">
+                <div class="d-flex justify-content-around py-2">
+                    <div>
+                        <h5 class="mb-4">Date: 17/4/2022</h5>
+                        <h5>Duration (in mins): 70</h5>
+                    </div>
+                    <div>
+                        <h5 class="mb-4">Type: Sub</h5>
+                        <h5>Score: 100</h5>
+                    </div>
+                </div>
+            </div>
+            <h5 class="py-1 alert alert-primary text-center">
+                question Paper title
+            </h5>
+        </div>
+
+        <div class="mt-5">
+            <!--Questions Come Here-->
+            <app-question [disableEdit]="true" [inResult]="true"></app-question>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</main>
