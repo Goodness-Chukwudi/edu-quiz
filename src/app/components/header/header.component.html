@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid px-5">
-      <a class="navbar-brand" href="/"
+      <a class="navbar-brand" [routerLink]="'/home'"
         ><img
           class="img-fluid"
           src="./assets/images/logo.png"
@@ -21,29 +21,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav container-fluid d-flex justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="'/home'"
+            ><img>Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link signUpLink"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-              >Sign up</a
-            >
+            <a class="nav-link" [routerLink]="'/in/create'"
+                  >Create quiz</a
+                >
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link logInLink"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-              >Log in</a
-            >
+            <a class="nav-link" [routerLink]="'/in/records'">Records</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -61,18 +52,18 @@
               aria-labelledby="navbarDarkDropdownMenuLink"
             >
               <li>
-                <a class="d-none dropdown-item activeUserEmail" href="#"> </a>
+                <span class="dropdown-item activeUserEmail" [routerLink]="'/in/profile'"> current user </span>
               </li>
               <li>
-                <a class="dropdown-item" href="./create-quiz.html"
-                  >Create quiz</a
+                <a class="dropdown-item" [routerLink]="'/signup'"
+                  >Sign up</a
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="./records.html">Records</a>
+                <a class="dropdown-item" [routerLink]="'/login'">Log in</a>
               </li>
               <li>
-                <a class="dropdown-item logout" href="#">Log out</a>
+                <a class="dropdown-item logout">Log out</a>
               </li>
             </ul>
           </li>

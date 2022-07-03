@@ -14,6 +14,10 @@ import { QuestionComponent } from './components/question/question.component';
 import { RecordsComponent } from './pages/records/records.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
 import { ResultComponent } from './pages/result/result.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ProfileSetupComponent } from './pages/profile-setup/profile-setup.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { ResultComponent } from './pages/result/result.component';
     QuestionComponent,
     RecordsComponent,
     QuizComponent,
-    ResultComponent
+    ResultComponent,
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent,
+    ProfileSetupComponent
   ],
   imports: [
     BrowserModule,
